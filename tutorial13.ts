@@ -1,3 +1,20 @@
+let message = "List of Colors"
+
+let displayColors1 = function(){
+
+    console.log(message);
+    console.log(arguments);
+    
+    
+   for(let i in arguments){
+       console.log(arguments[i]);
+       
+   }
+}
+
+displayColors1(message, 'Red');
+displayColors1(message, 'Red','Blue');
+displayColors1(message, 'Red','Blue','Green');
 
 let displayColors = function(message, ...colors){
 
@@ -10,8 +27,6 @@ let displayColors = function(message, ...colors){
         
     }
 }
-
-let message = "List of Colors"
 
 displayColors(message, 'Red');
 displayColors(message, 'Red','Blue');
